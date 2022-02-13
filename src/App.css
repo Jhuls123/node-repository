@@ -1,66 +1,136 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=Eagle+Lake&family=Epilogue:wght@500;600&family=Inter:wght@100;200;300;400;600;700&family=Neucha&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=Eagle+Lake&family=Epilogue:wght@500;600&family=Inter:wght@100;200;300;400;600;700&family=Neucha&display=swap");
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'DM Sans', sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "DM Sans", sans-serif;
 }
 .App {
-  background-color: white;
-  /* text-align: center; */
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
+	background-color: white;
+	/* text-align: center; */
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
 }
 .question-card {
-  margin: auto;
-  display: flex;
-  gap: 10px;
-  width: 600px;
-  height: 250px;
-  background: #333;
-  padding: 1rem;
-  box-shadow: 2px 2px 5px #000;
-  border-radius: 5px;
+	margin: auto;
+	display: flex;
+	gap: 10px;
+	width: 600px;
+	height: 250px;
+	background: #333;
+	padding: 1rem;
+	box-shadow: 2px 2px 5px #000;
+	border-radius: 5px;
 }
 .question-box {
-  order: 2;
-  flex: 1;
-  color: #fff;
+	order: 2;
+	flex: 1;
+	color: #fff;
 }
 .question-box span {
-  letter-spacing: 1px;
-
+	letter-spacing: 1px;
 }
 .question-box h1 {
-  font-size: 26px;
-  margin-top: 1rem;
+	font-size: 26px;
+	margin-top: 1rem;
 }
 .question-button {
-  order: 1;
-  flex: 1;
-  display: flex;
-  gap: 5px;
-  flex-direction: column;
+	order: 1;
+	flex: 1;
+	display: flex;
+	gap: 5px;
+	flex-direction: column;
 }
 .question-button button {
-  height: 100%;
-  font-weight: bold;
-  color: #f1f1f1;
-  border: 1px solid #f1f1f1;
-  border-radius: 50px;
-  background-color: transparent;
-  transition: all .2s ease;
+	height: 100%;
+	font-weight: bold;
+	color: #f1f1f1;
+	border: 1px solid #f1f1f1;
+	border-radius: 50px;
+	background-color: transparent;
+	transition: all 0.2s ease;
 }
 .question-button button:hover {
-  color: #333;
-  background: #f1f1f1;
+	color: #333;
+	background: #f1f1f1;
 }
 .score-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  color: #f1f1f1;
-  font-size: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	color: #f1f1f1;
+	font-size: 30px;
+}
+
+@media screen and (max-width: 375px) {
+	.question-card {
+		width: 350px;
+		height: 150px;
+	}
+	.question-box span {
+		font-size: 16px;
+		letter-spacing: 1px;
+	}
+	.question-box h1 {
+		font-size: 16px;
+		margin-top: 1rem;
+	}
+}
+@media screen and (max-width: 414px) {
+	.question-card {
+		width: 350px;
+		height: 170px;
+	}
+	.question-box span {
+		font-size: 16px;
+		letter-spacing: 1px;
+	}
+	.question-box h1 {
+		font-size: 17px;
+		margin-top: 1rem;
+	}
+}
+
+@media screen and (max-width: 820px) {
+	.question-button button {
+		font-size: 20px;
+	}
+}
+@media screen and (min-width: 912px) {
+	.question-card {
+		width: 800px;
+		height: 370px;
+	}
+	.question-button button {
+		font-size: 25px;
+	}
+	.question-box span {
+		font-size: 25px;
+		letter-spacing: 1px;
+	}
+	.question-box h1 {
+		font-size: 35px;
+		margin-top: 1rem;
+	}
+}
+@media screen and (min-width: 540px) {
+	.question-card {
+		width: 500px;
+		height: 270px;
+	}
+}
+@media screen and (min-width: 1024px) {
+	.question-button button {
+		font-size: 17px;
+	}
+  .question-box span {
+		font-size: 20px;
+		letter-spacing: 1px;
+	}
+	.question-box h1 {
+		font-size: 30px;
+		margin-top: 1rem;
+	}
 }
